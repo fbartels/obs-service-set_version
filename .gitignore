@@ -1,0 +1,5 @@
+*.pyc
+*.pyo
+tests/test_newline/
+set_versionc
+.*.sw?
