@@ -20,8 +20,11 @@ To run the full testsuite, some dependencies are needed:
 If the dependencies are not installed, some tests are skipped. `zypper` itself
 is also needed for the tests with python packages and PEP440 compatible versions.
 
-To run the testsuite, execute:
+To run the full testsuite, execute:
 
     python -m unittest discover tests/
 
-The testrun may take some time.
+The testrun may take some time, but you can specify a filename pattern, which
+test files should be run.
+
+    python -m unittest discover -p test_b*.py tests/
